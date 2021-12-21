@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"rel="stylesheet"/>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz-Game</title>
+</head>
+<body>
+    
+    <div class="wrapper wr1 active">
+        <!-- counter -->
+        <div class="qu-count">
+            <h1>Question 10 /<span>0</span></h1>
+            <p>score : <span>00</span></p>
+        </div>
+     <!-- Question show -->
+     <div class="qu">
+         <h2> Start the Quiz  </h2>
+     </div>
+
+     <!-- Option show -->
+     <div class="option-box">
+         <button class="btn-1">
+          <span>option 1</span> 
+         </button>
+         <button class="btn-2">
+         <span>option 2</span> 
+         </button>
+         <button class="btn-3">
+         <span>option 3</span> 
+         </button>
+         <button class="btn-4">
+         <span>option 4</span> 
+         </button>
+     </div>
+
+     <!-- Button For submit -->
+     <div class="submit">
+        <button id="start" onclick="start()">Start</button>
+         <button id="next" onclick="next()"><i class="fas fa-chevron-right"></i></button>
+        
+     </div>
+
+    </div>
+    <!-- for display the scores -->
+    <div class="wrapper score-con hide">
+
+        <h1>Your Score </h1>
+        <div>
+            <h3>Correct Answer : <span id="right">00</span></h3>
+            <h3 style="color: #b93737d0;border-left: 1px solid #75613c; padding-left: 4rem;">Wrong Answer : <span id="wrong">00</span></h3>
+        </div>
+        <div>
+            <h4>Thanks for playing </h4>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
